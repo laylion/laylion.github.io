@@ -1,32 +1,167 @@
 <!DOCTYPE HTML>
 <html lang="zh">
-<style type="text/css">
-  *{
-    margin:0;
-    padding:0;
-  }
-	html, body{
- 	  height:100%;
-    background: black;
-	}
-  .container-horization-vertical-item {
-    position: absolute;
-    width: 60%;
-    height: 80px;
-    background: #0000FF00;
-    text-align: center;
-    Line-height: 40px;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-  }  
-</style>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>深圳浪兰科技有限公司</title>
+    <link rel="apple-touch-icon" href="images/logo.png">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+    <link rel="icon" sizes="any" mask href="images/logo.png" />
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    html,
+    body {
+        height: 100%;
+        background: black;
+    }
+
+    .container-horization-vertical-item {
+        position: absolute;
+        width: 60%;
+        height: 80px;
+        background: #0000FF00;
+        text-align: center;
+        Line-height: 40px;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .header {
+        position: fixed;
+        height: 64px;
+        width: 100%;
+        background: #001B1B1B;
+    }
+
+    .header-left {
+        position: absolute;
+        width: auto;
+        height: auto;
+        float: left;
+        left: 10%;
+        margin-top: 8px;
+        background-color: none;
+        font-size: 24px;
+    }
+
+    .header-right {
+        position: absolute;
+        width: auto;
+        right: 10%;
+        margin-top: 20px;
+        background-color: none;
+    }
+
+    .header a:link,
+    a:visited,
+    a:active {
+        color: #101010;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .header a:hover {
+        color: #F8F8F8;
+        text-decoration: none;
+    }
+
+    .footer {
+        position: relative;
+        margin-top: -48px;
+        height: 48px;
+        clear: both;
+        background: #181818;
+    }
+
+    .page {
+        height: auto;
+        min-height: 100%;
+        background: #212121;
+    }
+
+    .content {
+        overflow: auto;
+        padding-top: 0px;
+        margin: 0px;
+        padding-bottom: 48px;
+    }
+
+    .about {
+        height: 120px;
+        padding: 24px;
+        color: #F0F0F0
+    }
+
+    .floatmenu {
+        position: fixed;
+        width: 72px;
+        float: right;
+        height: auto;
+        right: 0px;
+        margin-top: 10%;
+    }
+
+    img {
+        display: block;
+    }
+    </style>
+</head>
+
 <body>
-<div class="container-horization-vertical-item">
-  <b><font size="20" color="#F0F0F0">深圳浪兰科技有限公司</font><b/>
-	<h2><font color="#F0F0F0">网站筹建中...</font><h2/>
-</div>
+    <div class="container-horization-vertical-item">
+        <!--<b><font size="20" color="#F0F0F0">深圳浪兰科技有限公司</font><b/>
+    <h2><font color="#F0F0F0">网站筹建中...</font><h2/>-->
+        <!-- float menu -->
+    </div>
+    <div class="floatmenu">
+        <object align="right" width="100%" height="220px" data="floatmenu/floatmenu.html"></object>
+    </div>
+    <div class="header">
+        <div class="header-left">
+            <!-- <font size="12px" color="#F0F0F0">浪兰科技</font> -->
+            <a href="" title=""><img src="./img/laylionlogo.png" height="48px" alt=""></a>
+            <!-- <a href=""><p style="font-size: 32px; color: #F0F0F0;">深圳浪兰科技有限公司</p></a> -->
+        </div>
+        <div class="header-right">
+            <a href="#productlist" target="_self">产品</a>
+            <a href="#about" target="_self" style="margin-left: 24px">关于我们</a>
+        </div>
+    </div>
+    <!-- page -->
+    <div class="page">
+        <!-- content -->
+        <div class="content">
+            <div style="line-height: 10px; height: 600px;">
+                <iframe src="./jquery-easy-image-player/index.html" width="100%" height="600px" scrolling="no" frameborder="0"></iframe>
+            </div>
+            <!--product list-->
+            <div id="productlist" style="line-height: 0px">
+                <iframe src="./productlist/index.html" width="100%" style="height: 440px" scrolling="no" frameborder="0"></iframe>
+            </div>
+            <!--about us-->
+            <div class="about" id="about">
+                <div style="height: 40px; margin-left: 50px; margin-right: 50px; padding-left: 10%; padding-right: 10%;">
+                    <h3 align="center">关于我们</h3>
+                </div>
+                <!-- <p align="center">深圳浪兰科技有限公司，于2019年5月20日成立于深圳，是一家专注于高品质电子产品及配件研发与销售的科技公司。</p> -->
+                <div style="margin-left: 6%; margin-right: 6%;">
+                    <p align="start">深圳浪兰科技有限公司是一家专注于高品质电子产品及配件研发与销售的科技公司，于2019年5月20日正式成立。公司成员主要由上市企业工程师，著名外设企业设计师，四大会计事务所会计师等组成，他们热爱自由，崇尚品质，这也是“浪兰”的来由：“浪”代表自由，“兰”代表品质。laylion浪兰将为自由的生活方式力争做好每一件小事。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <div class="footer">
+        <iframe src="./copyright/copyright.html" align="bottom" width="100%" height="36px" scrolling="no" frameborder="0"></iframe>
+    </div>
 </body>
+
 </html>

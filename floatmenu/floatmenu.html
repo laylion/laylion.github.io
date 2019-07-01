@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html lang="zh">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>悬浮容器视图</title>
+    <meta name="author" content="Junk Chen" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    .float {
+        display: compact;
+        float: right;
+        position: fixed;
+        width: 60px;
+        height: 100%;
+        right: 0%;
+    }
+
+    .home {
+        display: compact;
+        float: right;
+        position: absolute;
+        width: 60px;
+        height: 110px;
+        margin: auto;
+        right: 0%;
+        top: 50%;
+        bottom: 50%;
+        padding-top: 8px;
+        border-top-left-radius: 0.5em 0.5em;
+        border-bottom-left-radius: 0.5em 0.5em;
+        background-color: #e0e0e0;
+    }
+
+    .float a:link,
+    a:visited,
+    a:active {
+        color: #333333;
+        text-decoration: none;
+    }
+
+    .float a:hover {
+        color: #a40000;
+        text-decoration: none;
+    }
+
+    img {
+        width: 40px;
+    }
+
+    h3 {
+        height: 30px;
+        margin: 0 auto;
+    }
+    </style>
+</head>
+<body>
+    <div class="float">
+        <div class="home">
+            <h3 align="center">
+                <font color="#424242">购买</font>
+            </h3>
+            <div style="margin-top: 4px;">
+                <a href="https://laylion.taobao.com" target="_blank">
+                <div align="center" style=“width: 60px”>
+                    <img src="./taobao-logo.png" />
+                    <h4>淘宝</h4>
+                </div>
+            </a>
+            </div>
+            <br />
+            <!-- 
+            <a href="https://www.amazon.cn" target="_blank">
+                <div align="center" style=“width: 60px”>
+                    <img src="./amazon-logo.png" />
+                    <h4>亚马逊</h4>
+                </div>
+            </a>
+             -->
+        </div>
+    </div>
+</body>
+
+</html>
